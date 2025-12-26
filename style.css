@@ -205,6 +205,7 @@ figcaption font{ color: var(--muted); }
 /* Tables → “card tables” */
 table{
   width: 100%;
+  table-layout: fixed;
   border-collapse: separate;
   border-spacing: 0;
   border: 1px solid rgba(15,23,42,.10);
@@ -285,3 +286,12 @@ center{ display:block; }
   font-size: 13px;
 }
 .footer-text{ margin: 0; }
+
+
+/* Make audio columns uniform (avoid header text driving column width) */
+thead th, tbody td{
+  min-width: 0; /* allow contents to shrink in flex-like contexts */
+}
+audio{
+  max-width: 100%;
+}
