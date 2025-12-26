@@ -241,7 +241,9 @@ table + br, br + table{ margin-top: 12px; }
 br{ line-height: 10px; }
 
 @media (max-width: 860px){
+  @media (max-width: 720px){
   table{ display: block; overflow-x: auto; }
+}
   thead th, tbody td{ white-space: nowrap; }
 }
 
@@ -285,3 +287,16 @@ center{ display:block; }
   font-size: 13px;
 }
 .footer-text{ margin: 0; }
+
+
+/* Audio tables: keep equal column widths and full-width controls */
+table.audio-table{
+  width: 100%;
+  table-layout: fixed;
+  display: table; /* override mobile scroll hack */
+}
+table.audio-table th, table.audio-table td{ vertical-align: middle; }
+table.audio-table td audio{
+  width: 100%;
+  display: block;
+}
