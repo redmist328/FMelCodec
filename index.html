@@ -17,18 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link rel="stylesheet" href="./style.css">
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\(', '\)']],
-        macros: {
-          bm: ['\boldsymbol{#1}', 1]
-        }
-      },
-      chtml: { scale: 1.0 }
-    };
-  </script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
   <body data-new-gr-c-s-check-loaded="14.1023.0" data-gr-ext-installed="">
     
@@ -92,9 +82,7 @@
   <figcaption style="text-align:center;">
     </font>
     <font size=3>
-      Fig.1 Inference pipeline of FMelCodec under the CRR framework.The coding module compresses the input mel-spectrogram into a discrete representation and produces a 
-      decoded coarse mel-spectrogram $\widetilde{\bm{M}}$. Conditioned on $\widetilde{\bm{M}}$, the CFM-based refinement module generates a decoded refined mel-spectrogram
-       $\hat{\bm{M}}$. Finally, a neural vocoder converts $\hat{\bm{M}}$ into the decoded waveform $\hat{\bm{x}}$.
+      Fig.1 Inference pipeline of FMelCodec under the CRR framework.$.
     </font>
   </figcaption><br><br>
   </p>
@@ -107,7 +95,7 @@
 <p>
 </p>
 <h3>Sample 1</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -126,7 +114,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec</strong></th>
@@ -144,7 +132,7 @@
 <br>
 <br>
 <h3>Sample 2</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -163,7 +151,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec</strong></th>
@@ -181,7 +169,7 @@
 <br>
 <br>
 <h3>Sample 3</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -200,7 +188,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec</strong></th>
@@ -218,7 +206,7 @@
 <br>
 <br>
 <h3>Sample 4</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -237,7 +225,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec</strong></th>
@@ -255,7 +243,7 @@
 <br>
 <br>
 <h3>Sample 5</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -274,7 +262,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec</strong></th>
@@ -292,7 +280,7 @@
 <br>
 <br>
 <h3>Sample 6</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -311,7 +299,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec</strong></th>
@@ -329,7 +317,7 @@
 <br>
 <br>
 <h3>Sample 7</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -348,7 +336,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec</strong></th>
@@ -367,7 +355,7 @@
 <br>
 <h2 id="samples-48k-750">Comparison at ultra–low bitrates (48 kHz, 750 bps)</h2>
 <h3>Sample 1</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -386,7 +374,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec</strong></th>
@@ -404,7 +392,7 @@
 <br>
 <br>
 <h3>Sample 2</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -423,7 +411,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec</strong></th>
@@ -441,7 +429,7 @@
 <br>
 <br>
 <h3>Sample 3</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -460,7 +448,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec</strong></th>
@@ -478,7 +466,7 @@
 <br>
 <br>
 <h3>Sample 4</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -497,7 +485,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec</strong></th>
@@ -515,7 +503,7 @@
 <br>
 <br>
 <h3>Sample 5</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -534,7 +522,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec</strong></th>
@@ -552,7 +540,7 @@
 <br>
 <br>
 <h3>Sample 6</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -571,7 +559,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec</strong></th>
@@ -589,7 +577,7 @@
 <br>
 <br>
 <h3>Sample 7</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -608,7 +596,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec</strong></th>
@@ -627,7 +615,7 @@
 <br>
 <h2 id="samples-16k-500">Bitrate-Saving Evaluation (16 kHz, 500 bps)</h2>
 <h3>Sample 1</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -646,7 +634,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec @ 500 bps</strong></th>
@@ -664,7 +652,7 @@
 <br>
 <br>
 <h3>Sample 2</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -683,7 +671,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec @ 500 bps</strong></th>
@@ -701,7 +689,7 @@
 <br>
 <br>
 <h3>Sample 3</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -720,7 +708,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec @ 500 bps</strong></th>
@@ -738,7 +726,7 @@
 <br>
 <br>
 <h3>Sample 4</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -757,7 +745,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec @ 500 bps</strong></th>
@@ -775,7 +763,7 @@
 <br>
 <br>
 <h3>Sample 5</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -794,7 +782,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec @ 500 bps</strong></th>
@@ -812,7 +800,7 @@
 <br>
 <br>
 <h3>Sample 6</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -831,7 +819,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec @ 500 bps</strong></th>
@@ -849,7 +837,7 @@
 <br>
 <br>
 <h3>Sample 7</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -868,7 +856,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec @ 500 bps</strong></th>
@@ -887,7 +875,7 @@
 <br>
 <h2 id="samples-16k-1000">Bitrate-Saving Evaluation (16 kHz, 1000 bps)</h2>
 <h3>Sample 1</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -906,7 +894,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec @ 1000 bps</strong></th>
@@ -924,7 +912,7 @@
 <br>
 <br>
 <h3>Sample 2</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -943,7 +931,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec @ 1000 bps</strong></th>
@@ -961,7 +949,7 @@
 <br>
 <br>
 <h3>Sample 3</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -980,7 +968,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec @ 1000 bps</strong></th>
@@ -998,7 +986,7 @@
 <br>
 <br>
 <h3>Sample 4</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -1017,7 +1005,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec @ 1000 bps</strong></th>
@@ -1035,7 +1023,7 @@
 <br>
 <br>
 <h3>Sample 5</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -1054,7 +1042,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec @ 1000 bps</strong></th>
@@ -1072,7 +1060,7 @@
 <br>
 <br>
 <h3>Sample 6</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -1091,7 +1079,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec @ 1000 bps</strong></th>
@@ -1109,7 +1097,7 @@
 <br>
 <br>
 <h3>Sample 7</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -1128,7 +1116,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>BigCodec @ 1000 bps</strong></th>
@@ -1147,7 +1135,7 @@
 <br>
 <h2 id="analysis">Analysis and Discussion</h2>
 <h3>Sample 1</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -1164,7 +1152,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>FMelCodec w/ MP</strong></th>
@@ -1183,7 +1171,7 @@
 <br>
 <br>
 <h3>Sample 2</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -1200,7 +1188,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>FMelCodec w/ MP</strong></th>
@@ -1218,7 +1206,7 @@
 <br>
 <br>
 <h3>Sample 3</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -1235,7 +1223,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>FMelCodec w/ MP</strong></th>
@@ -1253,7 +1241,7 @@
 <br>
 <br>
 <h3>Sample 4</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -1270,7 +1258,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>FMelCodec w/ MP</strong></th>
@@ -1288,7 +1276,7 @@
 <br>
 <br>
 <h3>Sample 5</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -1305,7 +1293,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>FMelCodec w/ MP</strong></th>
@@ -1323,7 +1311,7 @@
 <br>
 <br>
 <h3>Sample 6</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -1340,7 +1328,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>FMelCodec w/ MP</strong></th>
@@ -1358,7 +1346,7 @@
 <br>
 <br>
 <h3>Sample 7</h3>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Ground Truth</strong></th>
@@ -1375,7 +1363,7 @@
 </table>
 <br>
 <br>
-<table class="audio-table">
+<table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>FMelCodec w/ MP</strong></th>
