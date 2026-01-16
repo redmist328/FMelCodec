@@ -40,7 +40,7 @@
 <p>Ultra-low-bitrate speech coding is pivotal for bandwidth-constrained communication and deep compression, 
    yet maintaining naturalness and speaker identity at such extreme bit budgets remains challenging due to pronounced information loss and quantization instability.
 To this end, we propose FMelCodec, an ultra-low-bitrate neural speech codec in the mel-spectrogram domain, cast as a three-stage coding–refinement–reconstruction 
-   (CRR) framework that can operate at as low as 250 bps. In the CRR framework, the front-end mel-spectrogram coding stage employs a highly aggressive 640$×\times$  compression/decompression 
+   (CRR) framework that can operate at as low as 250 bps. In the CRR framework, the front-end mel-spectrogram coding stage employs a highly aggressive 640×  compression/decompression 
    encoder–decoder structure with a single 1024-entry VQ codebook, coupled with an online clustering strategy that reassigns underused codewords to prevent codebook 
    collapse and preserve codebook diversity. The subsequent conditional flow matching (CFM)-based mel-spectrogram refinement stage leverages a lightweight velocity-field estimator and CFM-based solver 
    to refine the codec-degraded mel-spectrogram produced by the preceding decoder, and adopts a self-consistency training scheme that supports fewer iterative inference steps 
@@ -53,10 +53,10 @@ Experiments conducted on two datasets spanning two sampling rates show that, und
 <div id="toc_container">
 <ul>
   <li><a href="#1">Model Architecture</a></li>
-  <li><a href="#2">Comparison at ultra–low bitrates (16 kHz, 250 bps)</a></li>
-  <li><a href="#3">Comparison at ultra–low bitrates (48 kHz, 750 bps)</a></li>
-  <li><a href="#4">Bitrate-Saving Evaluation (16 kHz, 500 bps)</a></li>
-  <li><a href="#5">Bitrate-Saving Evaluation (16 kHz, 1000 bps)</a></li>
+  <li><a href="#2">Comparison at Equal Ultra-Low Bitrates (16 kHz, 250 bps)</a></li>
+  <li><a href="#3">Comparison at Equal Ultra-Low Bitrates (48 kHz, 750 bps)</a></li>
+  <li><a href="#4">Comparison against Higher-Bitrate Baselinesn (16 kHz, 500 bps)</a></li>
+  <li><a href="#5">Comparison against Higher-Bitrate Baselines (16 kHz, 1000 bps)</a></li>
   <li><a href="#6">Analysis and Discussion</a></li>
 </ul>
 </div>
@@ -71,8 +71,7 @@ Experiments conducted on two datasets spanning two sampling rates show that, und
   <figcaption style="text-align:center;">
     </font>
     <font size=3>
-      Fig.1 Inference pipeline of FMelCodec under the CRR framework.The coding module compresses the input mel-spectrogram into a discrete representation and produces a 
-      decoded coarse mel-spectrogram M̃. Conditioned on M̃, the CFM-based refinement module generates a decoded refined mel-spectrogram M̂. Finally, a neural vocoder converts M̂ into the decoded waveform x̂.
+      Fig.1 Inference pipeline of the proposed FMelCodec under the CRR framework.
     </font>
   </figcaption><br><br>
   </p>
@@ -80,7 +79,7 @@ Experiments conducted on two datasets spanning two sampling rates show that, und
 
 
 
-<a name="2"><h2>Comparison at ultra–low bitrates (16 kHz, 250 bps)</h2></a>
+<a name="2"><h2>Comparison at Equal Ultra-Low Bitrates (16 kHz, 250 bps)</h2></a>
 
 <p>
 </p>
@@ -343,7 +342,7 @@ Experiments conducted on two datasets spanning two sampling rates show that, und
 </table>
 <br>
 <br>
-<a name="3"><h2>Comparison at ultra–low bitrates (48 kHz, 750 bps)</h2></a>
+<a name="3"><h2>Comparison at Equal Ultra-Low Bitrates (48 kHz, 750 bps)</h2></a>
 <h3>Sample 1</h3>
 <table>
   <thead>
@@ -603,7 +602,7 @@ Experiments conducted on two datasets spanning two sampling rates show that, und
 </table>
 <br>
 <br>
-<a name="4"><h2>Bitrate-Saving Evaluation (16 kHz, 500 bps)</h2></a>
+<a name="4"><h2>Comparison against Higher-Bitrate Baselines (16 kHz, 500 bps)</h2></a>
 <h3>Sample 1</h3>
 <table>
   <thead>
@@ -863,7 +862,7 @@ Experiments conducted on two datasets spanning two sampling rates show that, und
 </table>
 <br>
 <br>
-<a name="5"><h2>Bitrate-Saving Evaluation (16 kHz, 1000 bps)</h2></a>
+<a name="5"><h2>Comparison against Higher-Bitrate Baselines (16 kHz, 1000 bps)</h2></a>
 <h3>Sample 1</h3>
 <table>
   <thead>
@@ -1145,9 +1144,9 @@ Experiments conducted on two datasets spanning two sampling rates show that, und
 <table>
   <thead>
     <tr>
-      <th style="text-align: center"><strong>FMelCodec w/ MP</strong></th>
-      <th style="text-align: center"><strong>FMelCodec w/ 1-stage</strong></th>
-      <th style="text-align: center"><strong>FMelCodec w/o SC</strong></th>
+      
+      <th style="text-align: center"><strong>FMelCodec w/o ST</strong></th>
+      <th style="text-align: center"><strong>FMelCodec*</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -1181,9 +1180,9 @@ Experiments conducted on two datasets spanning two sampling rates show that, und
 <table>
   <thead>
     <tr>
-      <th style="text-align: center"><strong>FMelCodec w/ MP</strong></th>
-      <th style="text-align: center"><strong>FMelCodec w/ 1-stage</strong></th>
-      <th style="text-align: center"><strong>FMelCodec w/o SC</strong></th>
+      
+      <th style="text-align: center"><strong>FMelCodec w/o ST</strong></th>
+      <th style="text-align: center"><strong>FMelCodec*</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -1216,9 +1215,9 @@ Experiments conducted on two datasets spanning two sampling rates show that, und
 <table>
   <thead>
     <tr>
-      <th style="text-align: center"><strong>FMelCodec w/ MP</strong></th>
-      <th style="text-align: center"><strong>FMelCodec w/ 1-stage</strong></th>
-      <th style="text-align: center"><strong>FMelCodec w/o SC</strong></th>
+      
+      <th style="text-align: center"><strong>FMelCodec w/o ST</strong></th>
+      <th style="text-align: center"><strong>FMelCodec*</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -1251,9 +1250,9 @@ Experiments conducted on two datasets spanning two sampling rates show that, und
 <table>
   <thead>
     <tr>
-      <th style="text-align: center"><strong>FMelCodec w/ MP</strong></th>
-      <th style="text-align: center"><strong>FMelCodec w/ 1-stage</strong></th>
-      <th style="text-align: center"><strong>FMelCodec w/o SC</strong></th>
+      
+      <th style="text-align: center"><strong>FMelCodec w/o ST</strong></th>
+      <th style="text-align: center"><strong>FMelCodec*</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -1286,9 +1285,9 @@ Experiments conducted on two datasets spanning two sampling rates show that, und
 <table>
   <thead>
     <tr>
-      <th style="text-align: center"><strong>FMelCodec w/ MP</strong></th>
-      <th style="text-align: center"><strong>FMelCodec w/ 1-stage</strong></th>
-      <th style="text-align: center"><strong>FMelCodec w/o SC</strong></th>
+      
+      <th style="text-align: center"><strong>FMelCodec w/o ST</strong></th>
+      <th style="text-align: center"><strong>FMelCodec*</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -1321,9 +1320,9 @@ Experiments conducted on two datasets spanning two sampling rates show that, und
 <table>
   <thead>
     <tr>
-      <th style="text-align: center"><strong>FMelCodec w/ MP</strong></th>
-      <th style="text-align: center"><strong>FMelCodec w/ 1-stage</strong></th>
-      <th style="text-align: center"><strong>FMelCodec w/o SC</strong></th>
+      
+      <th style="text-align: center"><strong>FMelCodec w/o ST</strong></th>
+      <th style="text-align: center"><strong>FMelCodec*</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -1356,14 +1355,14 @@ Experiments conducted on two datasets spanning two sampling rates show that, und
 <table>
   <thead>
     <tr>
-      <th style="text-align: center"><strong>FMelCodec w/ MP</strong></th>
-      <th style="text-align: center"><strong>FMelCodec w/ 1-stage</strong></th>
-      <th style="text-align: center"><strong>FMelCodec w/o SC</strong></th>
+      
+      <th style="text-align: center"><strong>FMelCodec w/o ST</strong></th>
+      <th style="text-align: center"><strong>FMelCodec*</strong></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left"><audio src="./wavs/ana/D/D_07.wav" controls="" preload=""></audio></td>
+      
       <td style="text-align: left"><audio src="./wavs/ana/E/E_07.wav" controls="" preload=""></audio></td>
       <td style="text-align: left"><audio src="./wavs/ana/F/F_07.wav" controls="" preload=""></audio></td>
   </tbody>
