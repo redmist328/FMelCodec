@@ -1,0 +1,15 @@
+subset,sample_no,original_filename,gt,fmelcodec,dac,mdctcodec,bigcodec,wavtokenizer,flowdec,semanticcodec_dag,focalcodec,focalcodec_dag
+500,01,3575_170457_000010_000000.wav,A_01.wav,B_01.wav,C_01.wav,D_01.wav,E_01.wav,F_01.wav,G_01.wav,H_01.wav,I_01.wav,J_01.wav
+500,02,4446_2273_000027_000002.wav,A_02.wav,B_02.wav,C_02.wav,D_02.wav,E_02.wav,F_02.wav,G_02.wav,H_02.wav,I_02.wav,J_02.wav
+500,03,1580_141083_000049_000000.wav,A_03.wav,B_03.wav,C_03.wav,D_03.wav,E_03.wav,F_03.wav,G_03.wav,H_03.wav,I_03.wav,J_03.wav
+500,04,5142_36377_000011_000000.wav,A_04.wav,B_04.wav,C_04.wav,D_04.wav,E_04.wav,F_04.wav,G_04.wav,H_04.wav,I_04.wav,J_04.wav
+500,05,5142_36377_000010_000002.wav,A_05.wav,B_05.wav,C_05.wav,D_05.wav,E_05.wav,F_05.wav,G_05.wav,H_05.wav,I_05.wav,J_05.wav
+500,06,1580_141083_000051_000001.wav,A_06.wav,B_06.wav,C_06.wav,D_06.wav,E_06.wav,F_06.wav,G_06.wav,H_06.wav,I_06.wav,J_06.wav
+500,07,237_134493_000015_000003.wav,A_07.wav,B_07.wav,C_07.wav,D_07.wav,E_07.wav,F_07.wav,G_07.wav,H_07.wav,I_07.wav,J_07.wav
+1000,01,121_127105_000019_000000.wav,A_01.wav,B_01.wav,C_01.wav,D_01.wav,E_01.wav,F_01.wav,G_01.wav,H_01.wav,I_01.wav,J_01.wav
+1000,02,5142_33396_000034_000000.wav,A_02.wav,B_02.wav,C_02.wav,D_02.wav,E_02.wav,F_02.wav,G_02.wav,H_02.wav,I_02.wav,J_02.wav
+1000,03,5142_33396_000042_000000.wav,A_03.wav,B_03.wav,C_03.wav,D_03.wav,E_03.wav,F_03.wav,G_03.wav,H_03.wav,I_03.wav,J_03.wav
+1000,04,7021_79730_000048_000001.wav,A_04.wav,B_04.wav,C_04.wav,D_04.wav,E_04.wav,F_04.wav,G_04.wav,H_04.wav,I_04.wav,J_04.wav
+1000,05,6829_68769_000067_000002.wav,A_05.wav,B_05.wav,C_05.wav,D_05.wav,E_05.wav,F_05.wav,G_05.wav,H_05.wav,I_05.wav,J_05.wav
+1000,06,1580_141083_000026_000000.wav,A_06.wav,B_06.wav,C_06.wav,D_06.wav,E_06.wav,F_06.wav,G_06.wav,H_06.wav,I_06.wav,J_06.wav
+1000,07,6829_68769_000093_000000.wav,A_07.wav,B_07.wav,C_07.wav,D_07.wav,E_07.wav,F_07.wav,G_07.wav,H_07.wav,I_07.wav,J_07.wav
