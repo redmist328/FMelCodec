@@ -168,4 +168,4 @@ If you find this work useful, please cite:
 
 ## License
 
-This repository is released for research purposes. Please update this section with the final license before public release.
+MIT
