@@ -66,7 +66,7 @@ The pretrained checkpoints will be released on Hugging Face:
 
 ```bash
 # TODO: replace redmist328/FMelCodec with the final Hugging Face repo if different
-hf download redmist328/FMelCodec --local-dir checkpoints
+hf download redmist2/FMelCodec --local-dir checkpoints
 ```
 
 A merged checkpoint is recommended for inference. The expected usage is:
